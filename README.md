@@ -6,7 +6,7 @@ A personal research blog built with Hugo and PaperMod, with automatic deployment
 
 - A PaperMod Profile homepage
 - A split black-and-white research cover
-- About, publications, projects, posts, archives, and search pages
+- A concise web CV, publications, projects, posts, archives, and search pages
 - Tables of contents, reading time, code-copy controls, breadcrumbs, and RSS
 - A post archetype designed for research and experiment notes
 - Automatic GitHub Pages builds and deployments
