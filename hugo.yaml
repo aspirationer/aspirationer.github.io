@@ -1,0 +1,138 @@
+baseURL: "https://aspirationer.github.io/"
+locale: "zh-CN"
+defaultContentLanguage: "zh"
+title: "Research Notes"
+theme: "PaperMod"
+copyright: "© {year} aspirationer"
+enableRobotsTXT: true
+enableEmoji: true
+
+pagination:
+  pagerSize: 8
+
+taxonomies:
+  category: categories
+  tag: tags
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+caches:
+  images:
+    dir: ":cacheDir/images"
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    noClasses: false
+    codeFences: true
+    guessSyntax: true
+    lineNos: true
+    style: monokai
+
+params:
+  env: production
+  title: "Research Notes"
+  description: "面向科研工作者的研究笔记、论文、项目与可复现工作流。"
+  keywords:
+    - Research
+    - Science
+    - Academic
+    - Reproducibility
+    - Hugo
+  author: "aspirationer"
+  defaultTheme: auto
+  disableThemeToggle: false
+  disableScrollToTop: false
+  displayFullLangName: false
+
+  DateFormat: "2006-01-02"
+  ShowReadingTime: true
+  ShowWordCount: true
+  ShowShareButtons: true
+  ShareButtons:
+    - x
+    - linkedin
+    - reddit
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowToc: true
+  TocOpen: false
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: true
+  hideFooter: false
+  comments: false
+  mainSections:
+    - posts
+
+  label:
+    text: "Research Notes"
+
+  profileMode:
+    enabled: true
+    title: "Research Notes"
+    subtitle: "研究 · 代码 · 思考<br><small>Research · Code · Ideas</small>"
+    buttons:
+      - name: "研究笔记"
+        url: "/posts/"
+      - name: "论文"
+        url: "/publications/"
+
+  socialIcons:
+    - name: github
+      title: "GitHub"
+      url: "https://github.com/aspirationer"
+    - name: rss
+      title: "RSS"
+      url: "/index.xml"
+
+  editPost:
+    URL: "https://github.com/aspirationer/aspirationer.github.io/tree/main/content"
+    Text: "建议修改"
+    appendFilePath: true
+
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.35
+    minMatchCharLength: 1
+    keys:
+      - title
+      - permalink
+      - summary
+      - content
+
+menu:
+  main:
+    - identifier: about
+      name: "关于"
+      url: "/about/"
+      weight: 10
+    - identifier: publications
+      name: "论文"
+      url: "/publications/"
+      weight: 20
+    - identifier: projects
+      name: "项目"
+      url: "/projects/"
+      weight: 30
+    - identifier: archives
+      name: "归档"
+      url: "/archives/"
+      weight: 40
+    - identifier: search
+      name: "搜索"
+      url: "/search/"
+      weight: 50

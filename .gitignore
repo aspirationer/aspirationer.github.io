@@ -1,0 +1,15 @@
+# Hugo output and generated resources
+/public/
+/resources/_gen/
+/.hugo_build.lock
+
+# Local tools and working files
+/work/
+/outputs/
+
+# Editors and operating systems
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
