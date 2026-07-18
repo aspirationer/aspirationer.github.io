@@ -51,6 +51,66 @@ body {
   transform: translateY(-2px);
 }
 
+/* Compact academic history for the CV page. */
+.education-list {
+  margin: 1.2rem 0 2rem;
+  border-top: 1px solid var(--border);
+}
+
+.education-item {
+  display: grid;
+  grid-template-columns: 120px minmax(0, 1fr);
+  gap: 1.5rem;
+  align-items: center;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.education-logo {
+  display: grid;
+  width: 120px;
+  height: 96px;
+  place-items: center;
+  padding: 0.65rem;
+  overflow: hidden;
+  border: 1px solid #dedede;
+  border-radius: 12px;
+  background: #fff;
+}
+
+.education-logo img {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  object-fit: contain;
+}
+
+.education-details h3 {
+  margin: 0 0 0.35rem;
+  font-family: var(--research-sans);
+  font-size: 1.15rem;
+  line-height: 1.35;
+}
+
+.education-details p {
+  margin: 0.18rem 0;
+}
+
+.education-period,
+.education-note {
+  color: var(--secondary);
+  font-family: var(--research-sans);
+}
+
+.education-period {
+  font-size: 0.95rem;
+}
+
+.education-note {
+  margin-top: 0.42rem !important;
+  font-size: 0.92rem;
+}
+
 /* Split black-and-white cover inspired by the selected PaperMod demo. */
 body.list:has(.profile) {
   min-height: 100vh;
@@ -131,6 +191,24 @@ body.list:has(.profile) .social-icons a:hover {
 }
 
 @media (max-width: 700px) {
+  .education-item {
+    grid-template-columns: 82px minmax(0, 1fr);
+    gap: 1rem;
+    align-items: start;
+    padding: 1.25rem 0;
+  }
+
+  .education-logo {
+    width: 82px;
+    height: 72px;
+    padding: 0.45rem;
+    border-radius: 10px;
+  }
+
+  .education-details h3 {
+    font-size: 1.05rem;
+  }
+
   body.list:has(.profile) {
     background:
       linear-gradient(
