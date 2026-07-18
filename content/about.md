@@ -7,14 +7,15 @@ aliases:
 showToc: false
 ShowBreadCrumbs: false
 ShowShareButtons: false
+disableShare: true
 hideMeta: true
 ---
 
 I am **Siqi Hou**, an incoming **Master of Philosophy (MPhil) student at the Australian National University (ANU)**. I will be supervised by **Prof. Miaomiao Liu** and **Prof. Richard Hartley**.
 
-Before joining ANU, I completed a **Bachelor's degree in Artificial Intelligence at Hong Kong Baptist University**.
+Before joining ANU, I graduated from **Hong Kong Baptist University** with a **Bachelor of Science (Hons) in Artificial Intelligence, First Class Honours**.
 
-My research interests lie in **Computer Vision**, **Vision-Language Models (VLMs)**, and **Spatial Intelligence**.
+My research interests lie at the intersection of **Computer Vision**, **Vision-Language Models (VLMs)**, and **Spatial Intelligence**.
 
 ## Education
 
@@ -38,17 +39,25 @@ My research interests lie in **Computer Vision**, **Vision-Language Models (VLMs
     <div class="education-details">
       <h3>Hong Kong Baptist University</h3>
       <p class="education-period">Sept. 2022 – Jun. 2026</p>
-      <p>Bachelor's degree in Artificial Intelligence</p>
+      <p>Bachelor of Science (Hons) in Artificial Intelligence</p>
+      <p class="education-note">First Class Honours</p>
     </div>
   </article>
 </div>
 
 ## Research Interests
 
-- Computer Vision
-- Vision-Language Models (VLMs)
-- Spatial Intelligence
+I am interested in building visual intelligence systems that can perceive, understand, and reason about the physical world. In particular, I am exploring:
+
+- **Computer Vision**, with an emphasis on 3D human modeling, reconstruction, and robust visual representation.
+
+- **Vision-Language Models (VLMs)** that connect visual perception with language-based reasoning and grounded understanding.
+
+- **Spatial Intelligence**, including representations that support reasoning about 3D structure, pose, viewpoint, objects, and their interactions.
+
+I welcome conversations and collaborations with researchers and students working on related problems. If our interests overlap, please feel free to get in touch.
 
 ## Contact
 
-For now, you can find me on [GitHub](https://github.com/aspirationer). Additional academic profiles and contact details will be added as this page develops.
+Email: [s230034018@gmail.com](mailto:s230034018@gmail.com)<br>
+[Google Scholar](https://scholar.google.com/citations?hl=zh-TW&user=Cg2IxuIAAAAJ) · [GitHub](https://github.com/aspirationer)

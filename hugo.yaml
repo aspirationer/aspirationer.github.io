@@ -95,6 +95,12 @@ params:
     - name: github
       title: "GitHub"
       url: "https://github.com/aspirationer"
+    - name: googlescholar
+      title: "Google Scholar"
+      url: "https://scholar.google.com/citations?hl=zh-TW&user=Cg2IxuIAAAAJ"
+    - name: email
+      title: "Email"
+      url: "mailto:s230034018@gmail.com"
     - name: rss
       title: "RSS"
       url: "/index.xml"
