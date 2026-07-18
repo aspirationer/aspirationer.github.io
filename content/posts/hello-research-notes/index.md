@@ -1,40 +1,39 @@
 ---
-title: "第一篇研究札记：为什么建立这个博客"
+title: "The First Research Note: Why Build This Blog?"
 date: 2026-07-18T20:30:00+08:00
 draft: false
-description: "把零散实验、阅读笔记与研究判断沉淀为可以检索和复用的知识。"
-summary: "这个博客将作为研究过程的公开日志：记录问题、方法、证据与局限，也记录那些尚未形成论文但值得保留的想法。"
+description: "Turning scattered experiments, reading notes, and research judgments into searchable and reusable knowledge."
+summary: "This blog is a public record of the research process: questions, methods, evidence, limitations, and ideas worth preserving before they become papers."
 tags:
-  - "研究方法"
-  - "写作"
+  - "Research Methods"
+  - "Writing"
 categories:
-  - "研究笔记"
+  - "Research Notes"
 showToc: true
 ---
 
-科研写作的最终产物通常是论文，但真实的研究过程远比论文丰富：失败的实验、参数选择的理由、读文献时产生的问题、一次有用的代码重构，以及暂时无法解释的异常结果。
+The final product of academic writing is often a paper, but the actual research process is much richer: failed experiments, reasons behind parameter choices, questions raised while reading, a useful code refactor, and anomalous results that cannot yet be explained.
 
-这个博客会保存这些过程性知识。
+This blog is intended to preserve that process knowledge.
 
-## 我准备写什么
+## What I plan to write
 
-内容主要分为四类：
+The content will primarily fall into four categories:
 
-1. **研究札记**：一个具体问题、观察或阶段性判断。
-2. **论文阅读**：不只复述结论，也关注假设、证据和局限。
-3. **实验记录**：数据、环境、参数、结果与失败原因。
-4. **工具与方法**：真正改善研究效率和可复现性的工作流。
+1. **Research notes**: a focused question, observation, or provisional judgment.
+2. **Paper notes**: attention to assumptions, evidence, and limitations rather than conclusions alone.
+3. **Experiment logs**: data, environment, parameters, results, and reasons for failure.
+4. **Tools and methods**: workflows that genuinely improve research efficiency and reproducibility.
 
-## 写作原则
+## Writing principles
 
-我希望每篇文章都尽量做到：
+I want each post to:
 
-- 区分事实、推断与个人判断；
-- 给出足够的复现信息；
-- 保留不确定性，不把阶段性结果包装成定论；
-- 在理解发生变化时主动修订。
+- distinguish facts, inferences, and personal judgments;
+- provide enough information for reproduction;
+- preserve uncertainty instead of presenting provisional results as final conclusions;
+- be revised when my understanding changes.
 
-## 从这里开始
+## Starting here
 
-首页保留了 PaperMod 简洁的 Profile 模式，并加入黑白对半的封面视觉。中间的研究标记之后可以替换成太极阴阳图形，让视觉语言和“对立、互补、变化”的研究过程更一致。
-
+The homepage retains PaperMod’s minimal Profile mode and adds a split black-and-white cover. The central research mark can later be replaced with a taijitu symbol, connecting the visual identity to the oppositions, complementarities, and changes that shape the research process.

@@ -1,53 +1,52 @@
 # Research Notes
 
-一个面向科研工作者的 Hugo + PaperMod 个人博客模板，使用 GitHub Actions 自动部署到 GitHub Pages。
+A personal research blog built with Hugo and PaperMod, with automatic deployment to GitHub Pages through GitHub Actions.
 
-## 已包含
+## Included
 
-- PaperMod Profile 首页
-- 黑白对半的研究主页封面
-- 关于、论文、项目、文章、归档与搜索
-- 文章目录、阅读时间、代码复制、面包屑与 RSS
-- 适合实验记录的文章 archetype
-- GitHub Pages 自动构建和发布
+- A PaperMod Profile homepage
+- A split black-and-white research cover
+- About, publications, projects, posts, archives, and search pages
+- Tables of contents, reading time, code-copy controls, breadcrumbs, and RSS
+- A post archetype designed for research and experiment notes
+- Automatic GitHub Pages builds and deployments
 
-## 本地预览
+## Local preview
 
-项目内已经下载过便携版 Hugo，当前工作区可直接运行：
+A portable Hugo binary is available in the current workspace:
 
 ```powershell
 .\work\tools\hugo-0.164.0\hugo.exe server -D
 ```
 
-浏览器打开 `http://localhost:1313/`。
+Open `http://localhost:1313/` in a browser.
 
-如果换到另一台电脑，请先安装 Hugo 0.146.0 或更高版本，再运行：
+On another computer, install Hugo 0.146.0 or later and run:
 
 ```powershell
 hugo server -D
 ```
 
-## 写一篇新文章
+## Create a new post
 
 ```powershell
 hugo new content posts/my-new-note/index.md
 ```
 
-编辑生成的 Markdown 文件，把 `draft: true` 改为 `draft: false` 后提交。
+Edit the generated Markdown file and change `draft: true` to `draft: false` when it is ready to publish.
 
-## 个性化
+## Personalization
 
-主要信息集中在 `hugo.yaml`：
+The main profile settings are in `hugo.yaml`:
 
-- `title`：站点标题
-- `params.author`：作者名
-- `params.profileMode`：主页标题、副标题和按钮
-- `params.socialIcons`：GitHub、Scholar、ORCID 等链接
-- `menu.main`：顶部导航
+- `title`: site title
+- `params.author`: author name
+- `params.profileMode`: homepage title, subtitle, and buttons
+- `params.socialIcons`: GitHub, Scholar, ORCID, and other links
+- `menu.main`: top navigation
 
-主页中央的 `R` 标记由 `assets/css/extended/custom.css` 生成，后续可以替换为太极阴阳图形。
+The central `R` mark is generated in `assets/css/extended/custom.css`. It can later be replaced with a taijitu symbol.
 
-## 发布
+## Publishing
 
-仓库推送到 `aspirationer/aspirationer.github.io` 后，在 GitHub 仓库的 **Settings → Pages** 中把 Source 设为 **GitHub Actions**。之后每次推送到 `main` 分支都会自动重新构建并发布。
-
+The repository is published at `aspirationer/aspirationer.github.io`. Every push to the `main` branch automatically rebuilds and deploys the site through GitHub Actions.

@@ -1,43 +1,43 @@
 ---
-title: "一份可复现研究笔记应该记录什么？"
+title: "What Should a Reproducible Research Note Record?"
 date: 2026-07-18T20:20:00+08:00
 draft: false
-description: "从问题、数据、环境、随机性到负结果，一份可以被未来的自己重新理解的实验记录。"
-summary: "复现并不只是保存代码。真正有用的研究笔记还需要保留问题、假设、数据版本、运行环境、评价方式和失败结果。"
+description: "From questions and data to environments, randomness, and negative results: an experiment record your future self can understand."
+summary: "Reproducibility is more than saving code. A useful research note also preserves the question, assumptions, data version, runtime environment, evaluation procedure, and negative results."
 tags:
-  - "可复现研究"
-  - "实验"
-  - "工作流"
+  - "Reproducible Research"
+  - "Experiments"
+  - "Workflow"
 categories:
-  - "方法"
+  - "Methods"
 showToc: true
 ---
 
-“代码能运行”只是可复现的起点。几个月后重新打开一个项目时，更常见的问题是：当时为什么这样做？使用的是哪一版数据？图中的数字来自哪次运行？没有写进论文的实验为什么被放弃？
+“The code runs” is only the starting point of reproducibility. When reopening a project months later, the more common questions are: Why was it done this way? Which data version was used? Which run produced the numbers in the figure? Why were the experiments that never appeared in the paper abandoned?
 
-## 1. 问题与假设
+## 1. Questions and assumptions
 
-先用最短的语言写清研究问题，并区分：
+State the research question as concisely as possible, and distinguish between:
 
-- 需要验证的假设；
-- 已知的背景事实；
-- 暂时采用但尚未验证的假定。
+- hypotheses to be tested;
+- established background facts;
+- working assumptions that have not yet been verified.
 
-如果这三者混在一起，后续很容易把实验结果解释过头。
+When these are mixed together, it becomes easy to overinterpret experimental results.
 
-## 2. 数据身份
+## 2. Data identity
 
-不要只记录数据集名称。至少保存：
+Do not record only the dataset name. At a minimum, preserve:
 
-- 获取日期和来源；
-- 版本号、提交哈希或校验值；
-- 样本筛选和排除规则；
-- 预处理脚本及参数；
-- 数据使用许可。
+- acquisition date and source;
+- version number, commit hash, or checksum;
+- sample inclusion and exclusion rules;
+- preprocessing scripts and parameters;
+- data-use license.
 
-## 3. 运行环境
+## 3. Runtime environment
 
-依赖锁文件、操作系统、硬件、驱动和随机种子都会影响结果。对于关键实验，最好让环境可以通过脚本或容器重新创建。
+Dependency lockfiles, operating systems, hardware, drivers, and random seeds can all affect results. For important experiments, the environment should be reconstructable through a script or container.
 
 ```text
 commit: <git-sha>
@@ -47,15 +47,14 @@ seed: <integer>
 command: <exact-entrypoint>
 ```
 
-## 4. 评价与决策
+## 4. Evaluation and decisions
 
-在看到结果之前写下主要评价指标和成功标准，可以减少事后挑选指标的倾向。改变指标并非不可以，但要记录改变的理由。
+Writing down the primary evaluation metric and success criteria before seeing the results can reduce post hoc metric selection. Metrics can be changed, but the reason for the change should be documented.
 
-## 5. 负结果
+## 5. Negative results
 
-失败的实验同样是信息。记录它排除了什么、失败可能来自哪里、下一步如何区分不同解释。未来的自己和合作者会因此少走很多弯路。
+A failed experiment is still information. Record what it rules out, where the failure may have originated, and how the next experiment could distinguish between competing explanations. Your future self and collaborators will avoid repeating the same dead ends.
 
-## 一个简单标准
+## A simple standard
 
-如果一份笔记能够让六个月后的自己回答“做了什么、为什么做、结果从哪里来、哪里仍不确定”，它就已经比多数实验日志更有价值。
-
+If a note allows your future self, six months later, to answer what was done, why it was done, where the result came from, and what remains uncertain, it is already more valuable than most experiment logs.

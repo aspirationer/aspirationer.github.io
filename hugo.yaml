@@ -1,6 +1,6 @@
 baseURL: "https://aspirationer.github.io/"
-locale: "zh-CN"
-defaultContentLanguage: "zh"
+locale: "en-US"
+defaultContentLanguage: "en"
 title: "Research Notes"
 theme: "PaperMod"
 copyright: "© {year} aspirationer"
@@ -42,7 +42,7 @@ markup:
 params:
   env: production
   title: "Research Notes"
-  description: "面向科研工作者的研究笔记、论文、项目与可复现工作流。"
+  description: "Research notes, publications, projects, and reproducible workflows."
   keywords:
     - Research
     - Science
@@ -81,11 +81,11 @@ params:
   profileMode:
     enabled: true
     title: "Research Notes"
-    subtitle: "研究 · 代码 · 思考<br><small>Research · Code · Ideas</small>"
+    subtitle: "Research · Code · Ideas"
     buttons:
-      - name: "研究笔记"
+      - name: "Research Notes"
         url: "/posts/"
-      - name: "论文"
+      - name: "Publications"
         url: "/publications/"
 
   socialIcons:
@@ -98,7 +98,7 @@ params:
 
   editPost:
     URL: "https://github.com/aspirationer/aspirationer.github.io/tree/main/content"
-    Text: "建议修改"
+    Text: "Suggest changes"
     appendFilePath: true
 
   fuseOpts:
@@ -117,22 +117,22 @@ params:
 menu:
   main:
     - identifier: about
-      name: "关于"
+      name: "About"
       url: "/about/"
       weight: 10
     - identifier: publications
-      name: "论文"
+      name: "Publications"
       url: "/publications/"
       weight: 20
     - identifier: projects
-      name: "项目"
+      name: "Projects"
       url: "/projects/"
       weight: 30
     - identifier: archives
-      name: "归档"
+      name: "Archives"
       url: "/archives/"
       weight: 40
     - identifier: search
-      name: "搜索"
+      name: "Search"
       url: "/search/"
       weight: 50

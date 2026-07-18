@@ -1,26 +1,25 @@
 ---
-title: "关于"
-description: "研究兴趣、工作方式与联系方式"
+title: "About"
+description: "Research interests, working principles, and contact information"
 date: 2026-07-18
 showToc: true
 ---
 
-你好，这里是我的研究主页与数字花园。
+Hello. This is my research homepage and digital garden.
 
-我用这个空间记录正在形成的想法、可复现实验、论文阅读笔记，以及研究过程中真正有用的工具。内容会在“短札记 → 完整笔记 → 项目或论文”的路径上逐渐成熟。
+I use this space to document emerging ideas, reproducible experiments, paper notes, and tools that prove genuinely useful in research. The material is expected to evolve from short observations into complete notes, projects, and publications.
 
-## 研究兴趣
+## Research interests
 
-- 以问题为中心的方法研究
-- 可复现、可检验的计算实验
-- 机器学习与科学研究工作流
-- 开放知识与长期写作
+- Problem-driven methodological research
+- Reproducible and testable computational experiments
+- Machine learning and scientific workflows
+- Open knowledge and long-form research writing
 
-## 我如何记录研究
+## How I document research
 
-每篇技术笔记尽量说明研究问题、数据来源、方法假设、实验环境和局限性。仍在探索中的内容会明确标注，避免把阶段性观察写成确定结论。
+Each technical note aims to state the research question, data sources, methodological assumptions, experimental environment, and limitations. Work that is still exploratory will be identified as such, so provisional observations are not presented as settled conclusions.
 
-## 联系方式
+## Contact
 
-目前可以通过 [GitHub](https://github.com/aspirationer) 找到我。后续可在这里补充学校主页、Google Scholar、ORCID 和邮箱。
-
+For now, you can find me on [GitHub](https://github.com/aspirationer). My institutional profile, Google Scholar, ORCID, and email will be added as this page is completed.

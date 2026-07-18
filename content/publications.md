@@ -1,22 +1,22 @@
 ---
-title: "论文与预印本"
+title: "Publications and Preprints"
 description: "Publications, preprints, and working papers"
 date: 2026-07-18
 showToc: true
 ---
 
-这里将按年份整理论文、预印本与技术报告，并提供代码、数据和补充材料的入口。
+This page will organize publications, preprints, and technical reports by year, with links to code, data, and supplementary materials whenever available.
 
 ## Selected publications
 
-论文列表正在整理中。
+The publication list is being prepared.
 
 ## Working papers
 
-正在进行的工作会在内容足够稳定、适合公开讨论时发布。
+Ongoing work will appear here once it is sufficiently developed for public discussion.
 
-## 推荐的条目格式
+## Citation format
 
-**作者**, “论文题目,” *期刊或会议*, 年份.  
+**Authors**, “Paper title,” *Journal or Conference*, Year.
+
 [PDF] · [Code] · [Data] · [DOI]
-

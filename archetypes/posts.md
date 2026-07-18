@@ -6,40 +6,39 @@ description: ""
 summary: ""
 tags: []
 categories:
-  - "研究笔记"
+  - "Research Notes"
 showToc: true
 TocOpen: false
 math: false
 ---
 
-## 摘要
+## Abstract
 
-用 3–5 句话说明问题、方法和主要结论。
+Summarize the question, method, and main conclusion in three to five sentences.
 
-## 背景与问题
+## Background and question
 
-研究问题是什么？它为什么值得回答？
+What is the research question, and why is it worth answering?
 
-## 方法
+## Methods
 
-记录数据、模型、实验设置和关键假设，保证未来可以复现。
+Document the data, models, experimental setup, and key assumptions so the work can be reproduced later.
 
-## 结果
+## Results
 
-放置图表、结果与必要的误差分析。
+Present figures, results, and the necessary error analysis.
 
-## 讨论
+## Discussion
 
-解释结果、局限性和可能的替代解释。
+Interpret the results, limitations, and plausible alternative explanations.
 
-## 复现信息
+## Reproducibility
 
-- 代码：
-- 数据：
-- 环境：
-- 随机种子：
+- Code:
+- Data:
+- Environment:
+- Random seed:
 
-## 参考文献
+## References
 
 1. Author. *Title*. Venue, Year.
-
