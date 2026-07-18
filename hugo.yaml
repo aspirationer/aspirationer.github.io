@@ -1,9 +1,9 @@
 baseURL: "https://aspirationer.github.io/"
 locale: "en-US"
 defaultContentLanguage: "en"
-title: "Research Notes"
+title: "Siqi Hou"
 theme: "PaperMod"
-copyright: "© {year} aspirationer"
+copyright: "© 2026 Siqi Hou"
 enableRobotsTXT: true
 enableEmoji: true
 
@@ -41,15 +41,14 @@ markup:
 
 params:
   env: production
-  title: "Research Notes"
-  description: "Research notes, publications, projects, and reproducible workflows."
+  title: "Siqi Hou"
+  description: "Siqi Hou's research notes on computer vision, vision-language models, and spatial intelligence."
   keywords:
-    - Research
-    - Science
-    - Academic
-    - Reproducibility
-    - Hugo
-  author: "aspirationer"
+    - Computer Vision
+    - Vision-Language Models
+    - Spatial Intelligence
+    - Reproducible Research
+  author: "Siqi Hou"
   defaultTheme: auto
   disableThemeToggle: false
   disableScrollToTop: false
@@ -76,12 +75,12 @@ params:
     - posts
 
   label:
-    text: "Research Notes"
+    text: "Siqi Hou"
 
   profileMode:
     enabled: true
-    title: "Research Notes"
-    subtitle: "Research · Code · Ideas"
+    title: "Siqi Hou"
+    subtitle: "Computer Vision · VLM · Spatial Intelligence"
     imageUrl: "images/profile.png"
     imageTitle: "Profile photograph"
     imageWidth: 168
