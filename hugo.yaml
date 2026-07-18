@@ -82,6 +82,10 @@ params:
     enabled: true
     title: "Research Notes"
     subtitle: "Research · Code · Ideas"
+    imageUrl: "images/profile.png"
+    imageTitle: "Profile photograph"
+    imageWidth: 168
+    imageHeight: 168
     buttons:
       - name: "Research Notes"
         url: "/posts/"

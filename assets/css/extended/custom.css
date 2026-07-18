@@ -71,25 +71,27 @@ body.list:has(.profile) .footer {
 }
 
 body.list:has(.profile) .header-nav,
-body.list:has(.profile) .profile_inner,
 body.list:has(.profile) .footer {
   color: #fff;
   mix-blend-mode: difference;
 }
 
-body.list:has(.profile) .profile_inner::before {
-  display: grid;
-  width: 132px;
-  height: 132px;
-  place-items: center;
-  border: 5px solid currentColor;
-  border-radius: 50%;
-  content: "R";
-  font-family: var(--research-serif);
-  font-size: 76px;
-  font-weight: 700;
-  font-style: italic;
-  line-height: 1;
+body.list:has(.profile) .profile_inner > h1,
+body.list:has(.profile) .profile_inner > span,
+body.list:has(.profile) .profile_inner > .social-icons,
+body.list:has(.profile) .profile_inner > .buttons {
+  color: #fff;
+  mix-blend-mode: difference;
+}
+
+body.list:has(.profile) .profile img {
+  width: 168px;
+  height: 168px;
+  border: 4px solid rgba(255, 255, 255, 0.96);
+  box-shadow:
+    0 0 0 1px rgba(16, 16, 18, 0.2),
+    0 18px 48px rgba(0, 0, 0, 0.22);
+  object-fit: cover;
 }
 
 body.list:has(.profile) .profile h1 {
@@ -144,10 +146,9 @@ body.list:has(.profile) .social-icons a:hover {
     padding-inline: 8px;
   }
 
-  body.list:has(.profile) .profile_inner::before {
-    width: 108px;
-    height: 108px;
-    font-size: 62px;
+  body.list:has(.profile) .profile img {
+    width: 136px;
+    height: 136px;
   }
 }
 
@@ -158,4 +159,3 @@ body.list:has(.profile) .social-icons a:hover {
     transition: none;
   }
 }
-

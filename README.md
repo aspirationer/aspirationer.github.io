@@ -45,7 +45,7 @@ The main profile settings are in `hugo.yaml`:
 - `params.socialIcons`: GitHub, Scholar, ORCID, and other links
 - `menu.main`: top navigation
 
-The central `R` mark is generated in `assets/css/extended/custom.css`. It can later be replaced with a taijitu symbol.
+The profile photograph is stored at `assets/images/profile.png`. The circular presentation and split-cover styling are defined in `assets/css/extended/custom.css`.
 
 ## Publishing
 
