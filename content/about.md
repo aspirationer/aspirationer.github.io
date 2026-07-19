@@ -36,10 +36,6 @@ My research interests lie at the intersection of **Computer Vision**, **Vision-L
     <p>I will join the Australian National University as an MPhil student under the supervision of Prof. Miaomiao Liu and Prof. Richard Hartley.</p>
   </div>
   <div class="news-item">
-    <time class="news-date" datetime="2025-12">2025.12</time>
-    <p>I received the Second Class Award for Academic Excellence for the 2024–2025 academic year.</p>
-  </div>
-  <div class="news-item">
     <time class="news-date" datetime="2025-11">2025.11</time>
     <p>Our multifunctional desktop pet robot dog received Second Prize in the xCuriosity Scholarship.</p>
   </div>
