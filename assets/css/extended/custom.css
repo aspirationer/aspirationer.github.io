@@ -315,40 +315,9 @@ body.list:has(.profile) {
     );
 }
 
-body.list:has(.profile)::after {
-  position: fixed;
-  z-index: 2;
-  right: clamp(1.5rem, 5vw, 5rem);
-  bottom: 4.6rem;
-  color: rgba(255, 255, 255, 0.48);
-  content: "Be water, my friend.";
-  font-family: var(--research-serif);
-  font-size: 0.82rem;
-  font-style: italic;
-  letter-spacing: 0.055em;
-  mix-blend-mode: difference;
-  pointer-events: none;
-}
-
-.water-surface {
-  position: fixed;
-  z-index: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 156px;
-  opacity: 0.62;
-  filter: blur(0.15px);
-  mix-blend-mode: difference;
-  pointer-events: none;
-}
-
 body.list:has(.profile) .header,
 body.list:has(.profile) .main,
 body.list:has(.profile) .footer {
-  position: relative;
-  z-index: 1;
   background: transparent;
 }
 
@@ -392,21 +361,11 @@ body.list:has(.profile) .profile small {
 }
 
 body.list:has(.profile) .button {
-  box-sizing: border-box;
-  width: 144px;
-  margin: 0;
   border: 1px solid currentColor;
   background: transparent;
   transition:
     color 160ms ease,
     background 160ms ease;
-}
-
-body.list:has(.profile) .buttons {
-  display: grid;
-  grid-template-columns: repeat(2, 144px);
-  gap: 24px;
-  justify-content: center;
 }
 
 body.list:has(.profile) .button:hover {
@@ -479,21 +438,6 @@ body.list:has(.profile) .social-icons a:hover {
     width: 136px;
     height: 136px;
   }
-
-  body.list:has(.profile) .buttons {
-    grid-template-columns: repeat(2, 132px);
-    gap: 16px;
-  }
-
-  body.list:has(.profile) .button {
-    width: 132px;
-  }
-
-  body.list:has(.profile)::after {
-    right: 1.25rem;
-    bottom: 3.8rem;
-    font-size: 0.72rem;
-  }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -502,9 +446,5 @@ body.list:has(.profile) .social-icons a:hover {
   body.list:has(.profile) .button,
   body.list:has(.profile) .social-icons a {
     transition: none;
-  }
-
-  .water-surface {
-    opacity: 0.48;
   }
 }
