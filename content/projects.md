@@ -1,6 +1,6 @@
 ---
 title: "Selected Research Projects"
-description: "Current and completed work across visual intelligence, animation, robotics, and image restoration"
+description: "Current and completed work across VLMs, 4D understanding, spatial intelligence, reconstruction, and robotics"
 date: 2026-07-18
 showToc: false
 ShowBreadCrumbs: false
@@ -12,16 +12,28 @@ These projects highlight the research threads most closely connected to my curre
 
 <div class="project-grid">
   <article class="project-card">
-    <p class="project-meta"><span class="project-status">Active</span> Nov. 2023 – Present</p>
+    <p class="project-meta"><span class="project-status">Active</span> 2026 – Present</p>
+    <h2>VLMs for Video and 4D Understanding</h2>
+    <p>Exploring how vision-language models can integrate temporal visual evidence, language, and structured 3D/4D representations for grounded understanding of dynamic scenes.</p>
+  </article>
+
+  <article class="project-card">
+    <p class="project-meta"><span class="project-status">Active</span> 2026 – Present</p>
+    <h2>4D Point Tracking and Spatial Intelligence</h2>
+    <p>Investigating point-level correspondence and tracking across time in dynamic 3D scenes, with a focus on motion, geometry, object interactions, and spatial reasoning.</p>
+  </article>
+
+  <article class="project-card">
+    <p class="project-meta"><span class="project-status project-status--completed">Completed</span> Nov. 2023 – 2026</p>
     <h2>Language-Guided 3D Human Reconstruction</h2>
-    <p>Developing geometry-aware methods for reconstructing 3D humans from limited visual observations. The work explores multi-scale feature fusion, separate geometry and texture refinement, and language-guided topology reasoning.</p>
+    <p>Developed geometry-aware methods for reconstructing 3D humans from limited visual observations. The work explored multi-scale feature fusion, separate geometry and texture refinement, and language-guided topology reasoning.</p>
     <p class="project-links"><a href="/publications/">Related publication</a></p>
   </article>
 
   <article class="project-card">
-    <p class="project-meta"><span class="project-status">Active</span> Jun. 2025 – Present</p>
+    <p class="project-meta"><span class="project-status project-status--completed">Completed</span> Jun. 2025 – Early 2026</p>
     <h2>Temporal Consistency for Animation Generation</h2>
-    <p>Studying temporal refinement for image-to-animation generation, with an emphasis on reducing flicker and geometric distortion through frame-similarity constraints and temporal self-attention smoothing.</p>
+    <p>Studied temporal refinement for image-to-animation generation, with an emphasis on reducing flicker and geometric distortion through frame-similarity constraints and temporal self-attention smoothing.</p>
   </article>
 
   <article class="project-card">
