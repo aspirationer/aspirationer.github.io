@@ -88,7 +88,7 @@ params:
     buttons:
       - name: "Publications"
         url: "/publications/"
-      - name: "CV"
+      - name: "About Me"
         url: "/cv/"
 
   socialIcons:
@@ -142,7 +142,7 @@ menu:
       url: "/projects/"
       weight: 30
     - identifier: cv
-      name: "CV"
+      name: "About Me"
       url: "/cv/"
       weight: 40
     - identifier: search
