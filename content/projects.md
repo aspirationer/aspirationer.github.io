@@ -33,7 +33,7 @@ These projects highlight the research threads most closely connected to my curre
   <article class="project-card">
     <p class="project-meta"><span class="project-status project-status--completed">Completed</span> Jun. 2025 – Early 2026</p>
     <h2>Temporal Consistency for Animation Generation</h2>
-    <p>Studied temporal refinement for image-to-animation generation, with an emphasis on reducing flicker and geometric distortion through frame-similarity constraints and temporal self-attention smoothing.</p>
+    <p>Developed in collaboration with an industry partner and applied to video generation. The project studied temporal refinement for image-to-animation generation, with an emphasis on reducing flicker and geometric distortion through frame-similarity constraints and temporal self-attention smoothing.</p>
   </article>
 
   <article class="project-card">
@@ -44,8 +44,8 @@ These projects highlight the research threads most closely connected to my curre
   </article>
 
   <article class="project-card">
-    <p class="project-meta"><span class="project-status project-status--completed">Completed</span> Jan. 2024 – Jun. 2024</p>
+    <p class="project-meta"><span class="project-status project-status--completed">Completed &amp; Shortlisted</span> Jan. 2024 – Jun. 2024</p>
     <h2>Efficient Semantic-Aware Image Super-Resolution</h2>
-    <p>Developed a lightweight semantic-aware discriminator for efficient image super-resolution, targeting faster inference and lower computational cost while retaining reconstruction quality.</p>
+    <p>Developed a lightweight semantic-aware discriminator for efficient image super-resolution, targeting faster inference and lower computational cost while retaining reconstruction quality. The project was shortlisted for the Second Poster Exhibition of the School of Computer Science.</p>
   </article>
 </div>
