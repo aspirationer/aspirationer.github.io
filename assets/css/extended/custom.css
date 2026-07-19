@@ -361,11 +361,21 @@ body.list:has(.profile) .profile small {
 }
 
 body.list:has(.profile) .button {
+  box-sizing: border-box;
+  width: 144px;
+  margin: 0;
   border: 1px solid currentColor;
   background: transparent;
   transition:
     color 160ms ease,
     background 160ms ease;
+}
+
+body.list:has(.profile) .buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 144px);
+  gap: 24px;
+  justify-content: center;
 }
 
 body.list:has(.profile) .button:hover {
@@ -437,6 +447,15 @@ body.list:has(.profile) .social-icons a:hover {
   body.list:has(.profile) .profile img {
     width: 136px;
     height: 136px;
+  }
+
+  body.list:has(.profile) .buttons {
+    grid-template-columns: repeat(2, 132px);
+    gap: 16px;
+  }
+
+  body.list:has(.profile) .button {
+    width: 132px;
   }
 }
 
