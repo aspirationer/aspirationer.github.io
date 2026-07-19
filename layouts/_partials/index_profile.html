@@ -38,10 +38,15 @@
         </div>
         {{- end }}
 
-        <p class="inkflow-eyebrow">Researcher · Visual Intelligence</p>
-        <h1>{{ .title | default site.Title | markdownify }}</h1>
-        <span class="inkflow-subtitle">{{ .subtitle | markdownify }}</span>
-        <p class="inkflow-phrase">Be water, my friend.</p>
+        <h1 aria-label="Siqi Hou">
+            <span class="inkflow-name-left">Siqi</span>
+            <span class="inkflow-name-right">Hou</span>
+        </h1>
+        <span class="inkflow-subtitle">
+            <span>Computer Vision · VLM</span>
+            <span>Spatial Intelligence</span>
+        </span>
+        <p class="inkflow-phrase"><span>Be water, my friend.</span></p>
         {{- partial "contact_icons.html" . }}
 
         {{- with .buttons }}
@@ -54,6 +59,5 @@
         </div>
         {{- end }}
     </div>
-    <p class="inkflow-footer-note">Between perception and understanding</p>
     {{- end }}
 </div>
