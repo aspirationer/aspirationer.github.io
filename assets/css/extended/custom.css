@@ -111,6 +111,99 @@ body {
   font-size: 0.92rem;
 }
 
+/* Compact academic-news timeline. */
+.news-list {
+  margin: 1rem 0 2rem;
+  border-top: 1px solid var(--border);
+}
+
+.news-item {
+  display: grid;
+  grid-template-columns: 5.25rem minmax(0, 1fr);
+  gap: 1rem;
+  padding: 0.85rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.news-date {
+  color: var(--secondary);
+  font-family: var(--research-sans);
+  font-size: 0.88rem;
+  font-variant-numeric: tabular-nums;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.news-item p {
+  margin: 0;
+}
+
+/* Selected projects use text-first cards to keep the page research-focused. */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 1.25rem 0 2rem;
+}
+
+.project-card {
+  padding: 1.15rem;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--entry);
+}
+
+.project-card h2 {
+  margin: 0.45rem 0 0.7rem;
+  font-size: 1.2rem;
+  line-height: 1.35;
+}
+
+.project-card p {
+  margin: 0.45rem 0;
+}
+
+.project-meta,
+.project-links {
+  font-family: var(--research-sans);
+  font-size: 0.84rem;
+}
+
+.project-meta {
+  color: var(--secondary);
+}
+
+.project-status {
+  display: inline-block;
+  margin-right: 0.45rem;
+  padding: 0.12rem 0.48rem;
+  border-radius: 999px;
+  background: var(--tertiary);
+  color: var(--primary);
+  font-weight: 700;
+}
+
+.project-status--published,
+.project-status--completed {
+  border: 1px solid var(--border);
+  background: transparent;
+}
+
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-top: 0.8rem !important;
+}
+
+.project-links a {
+  padding: 0.18rem 0.55rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  box-shadow: none;
+  font-weight: 600;
+}
+
 /* Publication records with compact, citation-first hierarchy. */
 .publication-list {
   margin: 1.2rem 0 2rem;
@@ -289,6 +382,15 @@ body.list:has(.profile) .social-icons a:hover {
 }
 
 @media (max-width: 700px) {
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .news-item {
+    grid-template-columns: 1fr;
+    gap: 0.35rem;
+  }
+
   .publication-item {
     grid-template-columns: 1fr;
     gap: 1rem;

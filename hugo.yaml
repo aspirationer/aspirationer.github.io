@@ -125,6 +125,10 @@ params:
 
 menu:
   main:
+    - identifier: news
+      name: "News"
+      url: "/cv/#news"
+      weight: 5
     - identifier: notes
       name: "Notes"
       url: "/posts/"
