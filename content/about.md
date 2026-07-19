@@ -1,6 +1,5 @@
 ---
 title: "About Me"
-description: "Academic background and research interests"
 url: "/cv/"
 aliases:
   - "/about/"
