@@ -302,22 +302,29 @@ body {
   border-color: var(--secondary);
 }
 
-/* Split black-and-white cover inspired by the selected PaperMod demo. */
+/* Inkflow cover: restrained yin-yang contrast with slow water-like motion. */
 body.list:has(.profile) {
+  --inkflow-paper: #f3f1eb;
+  --inkflow-ink: #181a1e;
+  --inkflow-white: #faf9f5;
+  --inkflow-ease: cubic-bezier(0.37, 0, 0.22, 1);
   min-height: 100vh;
+  overflow-x: hidden;
   background:
     linear-gradient(
       90deg,
-      #f4f4f1 0,
-      #f4f4f1 50%,
-      #1b1b1d 50%,
-      #1b1b1d 100%
+      var(--inkflow-paper) 0,
+      var(--inkflow-paper) 50%,
+      var(--inkflow-ink) 50%,
+      var(--inkflow-ink) 100%
     );
 }
 
 body.list:has(.profile) .header,
 body.list:has(.profile) .main,
 body.list:has(.profile) .footer {
+  position: relative;
+  z-index: 2;
   background: transparent;
 }
 
@@ -327,68 +334,291 @@ body.list:has(.profile) .footer {
   mix-blend-mode: difference;
 }
 
-body.list:has(.profile) .profile_inner > h1,
-body.list:has(.profile) .profile_inner > span,
-body.list:has(.profile) .profile_inner > .social-icons,
-body.list:has(.profile) .profile_inner > .buttons {
-  color: #fff;
-  mix-blend-mode: difference;
+body.list:has(.profile) .main {
+  overflow: visible;
 }
 
-body.list:has(.profile) .profile img {
+body.list:has(.profile) .profile {
+  position: relative;
+  isolation: isolate;
+}
+
+body.list:has(.profile) .profile_inner {
+  position: relative;
+  z-index: 2;
+  gap: 0;
+}
+
+body.list:has(.profile) .inkflow-current {
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  width: 420px;
+  height: 660px;
+  border-radius: 48% 52% 63% 37% / 42% 46% 54% 58%;
+  background:
+    radial-gradient(ellipse at 36% 30%, rgba(24, 26, 30, 0.16), transparent 41%),
+    radial-gradient(ellipse at 65% 66%, rgba(243, 241, 235, 0.13), transparent 45%);
+  filter: blur(38px);
+  opacity: 0.62;
+  pointer-events: none;
+  transform: translateX(-50%) rotate(-5deg);
+  animation: inkflow-current-drift 18s var(--inkflow-ease) infinite alternate;
+}
+
+body.list:has(.profile) .inkflow-current-one {
+  top: -10%;
+  margin-left: -36px;
+}
+
+body.list:has(.profile) .inkflow-current-two {
+  top: 25%;
+  width: 320px;
+  height: 540px;
+  margin-left: 62px;
+  opacity: 0.36;
+  transform: translateX(-50%) rotate(14deg);
+  animation-delay: -7s;
+  animation-duration: 23s;
+}
+
+body.list:has(.profile) .inkflow-portrait-field {
+  position: relative;
+  display: grid;
+  width: 252px;
+  height: 214px;
+  margin-bottom: 3px;
+  place-items: center;
+}
+
+body.list:has(.profile) .inkflow-portrait-field::before,
+body.list:has(.profile) .inkflow-portrait-field::after {
+  position: absolute;
+  border: 1px solid rgba(144, 149, 153, 0.16);
+  content: "";
+}
+
+body.list:has(.profile) .inkflow-portrait-field::before {
+  width: 205px;
+  height: 205px;
+  border-radius: 47% 53% 51% 49%;
+  animation: inkflow-caustic-turn 16s linear infinite;
+}
+
+body.list:has(.profile) .inkflow-portrait-field::after {
+  width: 218px;
+  height: 184px;
+  border-radius: 52% 48% 44% 56%;
+  animation: inkflow-caustic-turn-reverse 21s linear infinite;
+}
+
+body.list:has(.profile) .inkflow-ripple {
+  position: absolute;
+  width: 176px;
+  height: 176px;
+  border: 1px solid rgba(144, 149, 153, 0.24);
+  border-radius: 50%;
+  opacity: 0;
+  animation: inkflow-ripple-breathe 7.5s var(--inkflow-ease) infinite;
+}
+
+body.list:has(.profile) .inkflow-ripple-two {
+  animation-delay: -2.5s;
+}
+
+body.list:has(.profile) .inkflow-ripple-three {
+  animation-delay: -5s;
+}
+
+body.list:has(.profile) .inkflow-portrait-field img {
+  position: relative;
+  z-index: 2;
   width: 168px;
   height: 168px;
-  border: 4px solid rgba(255, 255, 255, 0.96);
+  border: 4px solid rgba(243, 241, 235, 0.9);
   box-shadow:
-    0 0 0 1px rgba(16, 16, 18, 0.2),
-    0 18px 48px rgba(0, 0, 0, 0.22);
+    0 18px 44px rgba(0, 0, 0, 0.16),
+    0 0 0 1px rgba(24, 26, 30, 0.13);
   object-fit: cover;
+  object-position: 50% 38%;
 }
 
 body.list:has(.profile) .profile h1 {
-  font-size: clamp(2rem, 5vw, 3.25rem);
+  margin: 0;
+  color: transparent;
+  background:
+    linear-gradient(90deg, var(--inkflow-ink) 0 50%, var(--inkflow-white) 50% 100%);
+  background-clip: text;
+  font-size: clamp(3.35rem, 6vw, 4.85rem);
+  font-weight: 500;
+  line-height: 1;
+  -webkit-background-clip: text;
 }
 
-body.list:has(.profile) .profile span {
-  font-size: 1.05rem;
-  line-height: 1.8;
+body.list:has(.profile) .inkflow-eyebrow,
+body.list:has(.profile) .inkflow-subtitle,
+body.list:has(.profile) .inkflow-phrase,
+body.list:has(.profile) .inkflow-socials,
+body.list:has(.profile) .inkflow-footer-note {
+  color: transparent;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(24, 26, 30, 0.62) 0 50%,
+      rgba(250, 249, 245, 0.62) 50% 100%
+    );
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 
-body.list:has(.profile) .profile small {
-  font-size: 0.78em;
-  letter-spacing: 0.08em;
+body.list:has(.profile) .inkflow-eyebrow {
+  margin: 0 0 13px;
+  font-family: var(--research-sans);
+  font-size: 0.69rem;
+  font-weight: 650;
+  letter-spacing: 0.24em;
   text-transform: uppercase;
+}
+
+body.list:has(.profile) .inkflow-subtitle {
+  margin-top: 18px;
+  font-family: var(--research-sans);
+  font-size: clamp(0.94rem, 1.45vw, 1.18rem);
+  font-weight: 440;
+  letter-spacing: 0.045em;
+  line-height: 1.6;
+}
+
+body.list:has(.profile) .inkflow-phrase {
+  margin: 12px 0 0;
+  font-family: var(--research-serif);
+  font-size: 0.82rem;
+  font-style: italic;
+  letter-spacing: 0.12em;
 }
 
 body.list:has(.profile) .button {
   box-sizing: border-box;
-  width: 144px;
+  display: inline-flex;
+  width: 132px;
+  height: 42px;
+  align-items: center;
+  justify-content: center;
   margin: 0;
-  border: 1px solid currentColor;
-  background: transparent;
+  padding: 0;
+  border: 1px solid rgba(93, 98, 102, 0.31);
+  border-radius: 999px;
+  background: rgba(243, 241, 235, 0.66);
+  color: var(--inkflow-ink);
+  font-family: var(--research-sans);
+  font-size: 0.82rem;
+  font-weight: 650;
+  letter-spacing: 0.045em;
+  backdrop-filter: blur(10px);
   transition:
-    color 160ms ease,
-    background 160ms ease;
+    border-color 240ms ease,
+    box-shadow 240ms ease,
+    transform 240ms var(--inkflow-ease);
+}
+
+body.list:has(.profile) .button:last-child {
+  background: rgba(38, 41, 46, 0.74);
+  color: var(--inkflow-white);
 }
 
 body.list:has(.profile) .buttons {
   display: grid;
-  grid-template-columns: repeat(2, 144px);
-  gap: 24px;
+  grid-template-columns: repeat(2, 132px);
+  gap: 14px;
   justify-content: center;
+  margin-top: 24px;
 }
 
 body.list:has(.profile) .button:hover {
-  color: #111;
-  background: #fff;
-}
-
-body.list:has(.profile) .social-icons a {
-  transition: transform 160ms ease;
-}
-
-body.list:has(.profile) .social-icons a:hover {
+  border-color: rgba(126, 132, 137, 0.7);
+  box-shadow: 0 9px 24px rgba(0, 0, 0, 0.09);
   transform: translateY(-2px);
+}
+
+body.list:has(.profile) .inkflow-socials {
+  display: flex;
+  gap: 19px;
+  margin-top: 20px;
+  font-family: var(--research-sans);
+  font-size: 0.72rem;
+  font-weight: 650;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+}
+
+body.list:has(.profile) .inkflow-socials a {
+  transition: opacity 200ms ease;
+}
+
+body.list:has(.profile) .inkflow-socials a:hover {
+  opacity: 0.54;
+}
+
+body.list:has(.profile) .inkflow-footer-note {
+  position: fixed;
+  right: 0;
+  bottom: 66px;
+  left: 0;
+  z-index: 2;
+  margin: 0;
+  font-family: var(--research-sans);
+  font-size: 0.62rem;
+  letter-spacing: 0.2em;
+  pointer-events: none;
+  text-transform: uppercase;
+}
+
+@keyframes inkflow-current-drift {
+  0% {
+    border-radius: 48% 52% 63% 37% / 42% 46% 54% 58%;
+    transform: translateX(-50%) translate3d(-15px, -8px, 0) rotate(-5deg) scale(0.96);
+  }
+
+  50% {
+    border-radius: 58% 42% 44% 56% / 51% 38% 62% 49%;
+  }
+
+  100% {
+    border-radius: 41% 59% 52% 48% / 37% 60% 40% 63%;
+    transform: translateX(-50%) translate3d(18px, 14px, 0) rotate(7deg) scale(1.04);
+  }
+}
+
+@keyframes inkflow-ripple-breathe {
+  0% {
+    opacity: 0;
+    transform: scale(0.92);
+  }
+
+  18% {
+    opacity: 0.46;
+  }
+
+  70% {
+    opacity: 0.08;
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(1.48);
+  }
+}
+
+@keyframes inkflow-caustic-turn {
+  to {
+    transform: rotate(348deg);
+  }
+}
+
+@keyframes inkflow-caustic-turn-reverse {
+  to {
+    transform: rotate(-342deg);
+  }
 }
 
 @media (max-width: 700px) {
@@ -429,33 +659,33 @@ body.list:has(.profile) .social-icons a:hover {
     font-size: 1.05rem;
   }
 
-  body.list:has(.profile) {
-    background:
-      linear-gradient(
-        90deg,
-        #f4f4f1 0,
-        #f4f4f1 50%,
-        #1b1b1d 50%,
-        #1b1b1d 100%
-      );
-  }
-
   body.list:has(.profile) .header-nav {
     padding-inline: 8px;
   }
 
-  body.list:has(.profile) .profile img {
-    width: 136px;
-    height: 136px;
+  body.list:has(.profile) .inkflow-current {
+    width: 330px;
+    opacity: 0.46;
   }
 
-  body.list:has(.profile) .buttons {
-    grid-template-columns: repeat(2, 132px);
-    gap: 16px;
+  body.list:has(.profile) .inkflow-portrait-field {
+    width: 228px;
+    height: 194px;
   }
 
-  body.list:has(.profile) .button {
-    width: 132px;
+  body.list:has(.profile) .inkflow-portrait-field img {
+    width: 146px;
+    height: 146px;
+  }
+
+  body.list:has(.profile) .inkflow-ripple {
+    width: 154px;
+    height: 154px;
+  }
+
+  body.list:has(.profile) .inkflow-footer-note {
+    bottom: 62px;
+    font-size: 0.52rem;
   }
 }
 
@@ -463,7 +693,23 @@ body.list:has(.profile) .social-icons a:hover {
   .post-entry,
   .publication-figure img,
   body.list:has(.profile) .button,
-  body.list:has(.profile) .social-icons a {
+  body.list:has(.profile) .inkflow-socials a {
     transition: none;
+  }
+
+  body.list:has(.profile) .inkflow-current,
+  body.list:has(.profile) .inkflow-portrait-field::before,
+  body.list:has(.profile) .inkflow-portrait-field::after,
+  body.list:has(.profile) .inkflow-ripple {
+    animation: none;
+  }
+
+  body.list:has(.profile) .inkflow-current {
+    opacity: 0.35;
+  }
+
+  body.list:has(.profile) .inkflow-ripple {
+    opacity: 0.13;
+    transform: scale(1.3);
   }
 }
