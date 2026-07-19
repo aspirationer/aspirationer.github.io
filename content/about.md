@@ -10,7 +10,7 @@ disableShare: true
 hideMeta: true
 ---
 
-I am **Siqi Hou**, an incoming **Master of Philosophy (MPhil) student at the Australian National University (ANU)**. I will be supervised by **Prof. Miaomiao Liu** and **Prof. Richard Hartley**.
+I am **Siqi Hou(Veen)**, an incoming **Master of Philosophy (MPhil) student at the Australian National University (ANU)**. I will be supervised by **Prof. Miaomiao Liu** and **Prof. Richard Hartley**.
 
 Before joining ANU, I graduated from **Hong Kong Baptist University** with a **Bachelor of Science (Hons) in Artificial Intelligence, First Class Honours**.
 

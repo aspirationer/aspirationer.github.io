@@ -32,7 +32,7 @@ For the most recent citation information, see my [Google Scholar profile](https:
 
   <article class="publication-item">
     <a class="publication-figure" href="https://doi.org/10.1007/978-981-95-2098-5_43" aria-label="Open the desktop pet robot dog publication">
-      <img src="/images/publications/icira-2025-part-ii.jpg" alt="Cover of the ICIRA 2025 Proceedings, Part II" loading="lazy">
+      <img src="/images/publications/robot-dog-system.png" alt="System architecture of the multifunctional desktop pet robot dog" loading="lazy">
     </a>
     <div class="publication-details">
       <p class="publication-venue">ICIRA 2025 · LNAI 16075 · 2025</p>
@@ -45,5 +45,3 @@ For the most recent citation information, see my [Google Scholar profile](https:
     </div>
   </article>
 </div>
-
-The Google Scholar entry titled “Single-Image 3D Human Modeling” is another indexed version of the UMan paper above and is therefore not listed as a separate publication.
