@@ -18,7 +18,7 @@ My research interests lie at the intersection of **Computer Vision**, **Vision-L
 
 ## News
 
-<div class="news-list">
+<div class="news-list" tabindex="0" aria-label="Latest news">
   <div class="news-item">
     <time class="news-date" datetime="2026-07">2026.07</time>
     <p>Our paper <a href="https://doi.org/10.1007/978-3-032-22267-1_21"><em>UMan: Multi-scale Feature Reconstruction and Super-Resolution for Single-Image 3D Human Modeling</em></a> appeared in the Springer proceedings of CGI 2025.</p>
