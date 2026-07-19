@@ -458,7 +458,6 @@ body.list:has(.profile) .profile h1 {
 body.list:has(.profile) .inkflow-eyebrow,
 body.list:has(.profile) .inkflow-subtitle,
 body.list:has(.profile) .inkflow-phrase,
-body.list:has(.profile) .inkflow-socials,
 body.list:has(.profile) .inkflow-footer-note {
   color: transparent;
   background:
@@ -540,23 +539,46 @@ body.list:has(.profile) .button:hover {
   transform: translateY(-2px);
 }
 
-body.list:has(.profile) .inkflow-socials {
+.contact-icons {
   display: flex;
-  gap: 19px;
-  margin-top: 20px;
-  font-family: var(--research-sans);
-  font-size: 0.72rem;
-  font-weight: 650;
-  letter-spacing: 0.11em;
-  text-transform: uppercase;
+  gap: 0.65rem;
+  align-items: center;
+  margin: 1rem 0 1.5rem;
 }
 
-body.list:has(.profile) .inkflow-socials a {
-  transition: opacity 200ms ease;
+.contact-icons a {
+  display: grid;
+  width: 40px;
+  height: 40px;
+  place-items: center;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--entry) 72%, transparent);
+  box-shadow: none;
+  transition:
+    border-color 180ms ease,
+    transform 180ms var(--inkflow-ease, ease);
 }
 
-body.list:has(.profile) .inkflow-socials a:hover {
-  opacity: 0.54;
+.contact-icons svg {
+  width: 21px;
+  height: 21px;
+}
+
+.contact-icons a:hover {
+  border-color: var(--secondary);
+  transform: translateY(-2px);
+}
+
+body.list:has(.profile) .contact-icons {
+  margin: 18px 0 0;
+  color: #fff;
+  mix-blend-mode: difference;
+}
+
+body.list:has(.profile) .contact-icons a {
+  border-color: currentColor;
+  background: transparent;
 }
 
 body.list:has(.profile) .inkflow-footer-note {
@@ -693,7 +715,7 @@ body.list:has(.profile) .inkflow-footer-note {
   .post-entry,
   .publication-figure img,
   body.list:has(.profile) .button,
-  body.list:has(.profile) .inkflow-socials a {
+  .contact-icons a {
     transition: none;
   }
 

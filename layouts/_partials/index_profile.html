@@ -42,6 +42,7 @@
         <h1>{{ .title | default site.Title | markdownify }}</h1>
         <span class="inkflow-subtitle">{{ .subtitle | markdownify }}</span>
         <p class="inkflow-phrase">Be water, my friend.</p>
+        {{- partial "contact_icons.html" . }}
 
         {{- with .buttons }}
         <div class="buttons">
@@ -52,17 +53,6 @@
             {{- end }}
         </div>
         {{- end }}
-
-        <div class="inkflow-socials" aria-label="Social links">
-            {{- range site.Params.socialIcons }}
-                {{- $name := lower .name }}
-                {{- if ne $name "rss" }}
-                <a href="{{ trim .url " " | safeURL }}" target="_blank" rel="noopener noreferrer me" title="{{ .title }}">
-                    {{- if eq $name "googlescholar" }}Scholar{{ else }}{{ .title | default .name }}{{ end -}}
-                </a>
-                {{- end }}
-            {{- end }}
-        </div>
     </div>
     <p class="inkflow-footer-note">Between perception and understanding</p>
     {{- end }}

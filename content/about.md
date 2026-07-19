@@ -58,5 +58,4 @@ I welcome conversations and collaborations with researchers and students working
 
 ## Contact
 
-Email: [s230034018@gmail.com](mailto:s230034018@gmail.com)<br>
-[Google Scholar](https://scholar.google.com/citations?hl=zh-TW&user=Cg2IxuIAAAAJ) · [GitHub](https://github.com/aspirationer)
+{{< contact-icons >}}
