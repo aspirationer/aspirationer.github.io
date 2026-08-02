@@ -1,6 +1,6 @@
 # Siqi Hou — Research Notes
 
-A personal research blog built with Hugo and PaperMod, with automatic deployment to GitHub Pages through GitHub Actions.
+A personal research blog built, with automatic deployment to GitHub Pages through GitHub Actions.
 
 ## Included
 
